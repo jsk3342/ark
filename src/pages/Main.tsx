@@ -1,24 +1,12 @@
-import axios from "axios";
-import React, { useState } from "react";
-import { useQuery } from "react-query";
-import { getUserData, userApi } from "../api/my-api";
-// import { fetchUserInfo } from "../core/apiHooks/user";
+import React from "react";
+import { useFetchNews } from "../queries/useFetchNews";
 
 const Main = () => {
-  console.log("나오는중");
-  // const { isLoading, data } = useQuery('fetchEvents', getUserData);
-  //   const { data } = fetchUserInfo();
-
-  //   console.log(data, "data");
-
+  const data = useFetchNews();
+  console.log(data)
   return (
     <div>
-      하나씩 해보자! 하나씩 해보자! 하나씩 해보자! 하나씩 해보자! 하나씩 해보자!
-      하나씩 해보자! 하나씩 해보자! 하나씩 해보자! 하나씩 해보자! 하나씩 해보자!
-      하나씩 해보자! 하나씩 해보자! 하나씩 해보자! 하나씩 해보자!
-      {/* {!!data?.map((event:{Title:string},key:number) => (
-                <h1 key={key}>{event.Title}</h1>
-            ))} */}
+      테스트
     </div>
   );
 };
