@@ -1,12 +1,11 @@
 import React from "react";
-import { useFetchNews } from "../queries/useFetchNews";
+import News from "../container/news/News";
+
 
 const Main = () => {
-  const data = useFetchNews();
-  console.log(data)
   return (
     <div>
-      테스트
+      <News/>
     </div>
   );
 };
